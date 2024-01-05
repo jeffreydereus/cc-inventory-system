@@ -115,7 +115,6 @@ function getItems(itemName, amount)
 
             if itemCount.count - amount <= 0 then
                 itemIndex[itemName][chestInfo][slot] = nil
-                file.write(itemIndex[itemName][chestInfo][slot])
                 if #itemIndex[itemName][chestInfo] <= 0 then
                     itemIndex[itemName][chestInfo] = nil
                 end
